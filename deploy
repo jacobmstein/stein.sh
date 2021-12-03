@@ -2,6 +2,8 @@
 
 npm run build
 
+echo "stein.sh" > dist/CNAME
+
 git add dist
 
 git commit --message "feat: add build files"
