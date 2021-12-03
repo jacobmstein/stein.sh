@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import 'highlight.js/scss/github-dark.scss';
+
+$text-color: #c9d1d9;
+
+body {
+  background-color: black;
+  color: $text-color;
+  font-family: 'JetBrainxs Mono', monospace;
+}
+
+pre {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.terminal__line--with-cursor:last-of-type pre::after {
+  content: '';
+  display: inline-block;
+  height: 1.25em;
+  position: fixed;
+  width: 0.5em;
+  text-align: center;
+  animation: 1.5s blink step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: white;
+  }
+}
+
+pre code.hljs {
+  background: none;
+  font-family: 'JetBrains Mono', monospace;
+  overflow-x: initial;
+  padding: 0;
+}
+
