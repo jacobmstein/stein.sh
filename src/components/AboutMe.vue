@@ -64,7 +64,7 @@ const data = {
       language: 'csharp',
     },
     {
-      prompt: 'root@stein.sh~#',
+      prompt: 'root@stein.sh:~#',
       text: 'logout',
       typed: true,
       typingDelay: ONE_SECOND * 8,
