@@ -8,4 +8,6 @@ git add dist
 
 git commit --message "feat: add build files"
 
-git subtree push --prefix dist origin gh-pages
+git subtree split --branch gh-pages --prefix dist
+
+git push --force origin gh-pages
