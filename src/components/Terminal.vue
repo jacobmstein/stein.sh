@@ -42,7 +42,6 @@ export default defineComponent({
       currentIndex: 0,
       currentLines: [] as ILine[],
       finished: false,
-      showCursor: true,
     };
   },
   created() {
@@ -50,7 +49,7 @@ export default defineComponent({
   },
   methods: {
     getTerminalLineClass(index: number) {
-      return this.showCursor && index === this.currentIndex
+      return index === this.currentIndex
         ? 'terminal__line--with-cursor'
         : 'terminal__line';
     },
